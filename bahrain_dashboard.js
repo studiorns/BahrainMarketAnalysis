@@ -30,8 +30,8 @@ const bahrainData = {
         intent: { current: 28.35, target: 30.00 }
     },
     marketCharacteristics: {
-        avgStay: 3.8,
-        bookingWindow: 73,
+        avgStay: 2.7,
+        bookingWindow: 25,
         growthForecast: 0.5,
         peakMonths: 'Jul & Aug'
     },
@@ -232,14 +232,6 @@ function initCharts() {
         data: {
             labels: months,
             datasets: [
-                {
-                    label: '2023',
-                    data: [34.79, 22.14, 34.79, 6.85, 51.32, 49.24, 22.64, 25.33, 35.25, 69.14, 122.36, 0],
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    backgroundColor: 'rgba(54, 162, 235, 0.1)',
-                    borderWidth: 2,
-                    fill: false
-                },
                 {
                     label: '2024',
                     data: bahrainData.impressions['2024'],
